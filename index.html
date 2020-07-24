@@ -2,11 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <style>     /* css */
+      a {          /* 모든 a태그에 관하여 적용됨 */
+        color:red;
+        text-decoration: none;
+      }      
+      h1 {
+        font-size:60px;
+        text-align:center;   /* h1 태그를 중앙으로 위치시킴, 다양하게 있음 */
+      }
+      #active {    /* id 선택자, id선택자와 class 선택자 중 id선택자 우선순위 높음 */
+      color:green;
+      }
+      .saw {     /* .을 앞에 붙임으로써 class 선택자로 기능하게됨, 기능이 같은 class선택자가 있으면 위쪽에 위치한 코드가 우선순위 높음 */
+      color:blue;
+      }
+    </style>
     <title>Mint-Lee's Labpage</title>   <!--탭창의 이름-->
     <h1>head</h1>
     <li><a href="index.html">1.HTML</a></li>   <!--폴더 안에 있는 파일을 링크걸어서 사용했음-->
-    <li><a href="2.html">2.CSS</a></li>
-    <li><a href="3.html">3.JavaScript</a></li>
+    <li><a href="2.html" style="color:red;text-decoration:underline">2.CSS</a></li>   <!--개별 css 줄때 style을 넣어서 사용-->
+    <li><a href="3.html" class="saw">3.JavaScript</a></li>  <!--다수중 선택하고 싶을때 class를 사용하여 일부를 선택하게 만들수있음-->
+    <li><class="saw" id="active">4.Noname</li>     <!--id는 단 한개만 설정함-->
 
   </head>
   <body>
