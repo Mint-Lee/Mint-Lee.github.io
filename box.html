@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1, a {  /* 중복된 태그면 쉼표를 통해 코드를 줄일수있음 */
+        border-width: 5px;   /* 박스테두리 5px */
+        border-color: red;   /* 박스테두리 빨간색 */
+        border-style:solid;  /* 박스테두리 실선, 없으면 박스 생성안됨 */
+        display:inline;    /* inline=여백없이 박스 생성, block=화면 전체를 쓰는(여백이 있는)박스 생, none=박스포함 안보이게 해 */
+        /* border:5px solid:red; 로도 표현이 가능, 순서상관없음, 근데 안된다?왜지 */
+        padding:20px;  /* 테두리와 안쪽글자 간의 간격 */
+        margin: 20px;  /* 테두리와 테두리 사이의 간격 */
+      }
+      h2 {
+        border-width: 20px;   /* 박스테두리 5px */
+        border-color: red;   /* 박스테두리 빨간색 */
+        border-style:solid;  /* 박스테두리 실선, 없으면 박스 생성안됨 */
+        padding:20px;  /* 테두리와 안쪽글자 간의 간격 */
+        margin: 20px;  /* 테두리와 테두리 사이의 간격 */
+        width:50px; /* block 상태는 화면전체를 사용해서 크기를 조절할떄 사용 */
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>CSS Box1</h1><br><br>
+    <h2>CSS Box2</h2>
+
+  </body>
+</html>
