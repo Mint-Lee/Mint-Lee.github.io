@@ -1,0 +1,41 @@
+/* 중복되는 css코드를 하나로 묶어서 html에 적용하기 쉽게 만듬 */
+
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  font-size:45px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{       /* id가 grid인 값중 ol에만 적용*/
+  padding-left:33px;
+}
+#grid #article{  /* id가 grid인 값중 id  article에만 적용*/
+  padding-left:25px;
+}
+@media(max-width:400px) {
+  #grid{
+    display:block;  /* none=없앰, block=표시?*/
+  }
+  ol{
+    border-right:none;
+  }
+}

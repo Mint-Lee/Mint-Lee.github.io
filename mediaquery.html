@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--동적환경을 만들기 위해 미디어쿼리 사용-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    div{
+      border:10px solid green;
+      font-size: 60px;
+    }
+    @media(min-width:800px) {  /* screen-width > 800px이라는 의미}, max-width*/
+      div{
+        display:none;     /* 800px 넘어가니 박스가 사라짐 */
+      }
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div>
+      Responsive
+    </div>
+
+  </body>
+</html>
