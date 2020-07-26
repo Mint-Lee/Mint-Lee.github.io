@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    #grid{
+      border: 10px solid pink;
+      display:grid;
+      grid-template-columns: 1fr 150px;   /* 설정 하나마다 열1개씩, 만약 2개가 설정됐는데 div쪽이 초과를 하면 다음행으로 밀려남 */
+    }
+    div {
+      border:5px solid gray;
+    }
+    </style>
+  </head>
+  <body>
+     <!--table보다 div나 span을 사용하여 간결하게 만들수있음-->
+    <div id="grid">
+      <div>NAVIGATION div1</div>    <!--div는 가로폭 전부 차지, 폭과 넓이 지정가능-->
+      <div>NAVIGATION div2</div>
+      <div>의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트
+      의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트의미 없는 텍스트</div>
+      <span>NAVIGATION span</span>   <!--span은 태그안의 내용만 차지, 줄바꿈없이 문장중간에 들어갈수있음-->
+    </div>
+  </body>
+</html>
